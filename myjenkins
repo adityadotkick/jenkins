@@ -5,6 +5,7 @@ pipeline {
         stage('build') {
             steps {
                 echo 'build in progress'
+                bat 'javac Helloworld.java'
             }
         }
         stage('test') {
